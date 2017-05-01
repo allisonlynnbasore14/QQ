@@ -12,6 +12,8 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
   response.render('templates/Welcome');
+    var user = req.param('firstname');
+    console.log(user);
 });
 
 app.get('/profile', function(request, response) {
