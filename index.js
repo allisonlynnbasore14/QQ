@@ -18,8 +18,6 @@ app.get('/profile', function(request, response) {
   response.render('templates/Profile');
 });
 
-<<<<<<< HEAD
-=======
 app.get('/Congrats', function(request, response) {
   response.render('templates/Congrats');
 });
