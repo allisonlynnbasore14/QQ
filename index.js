@@ -14,25 +14,25 @@ app.get('/', function(request, response) {
   response.render('templates/Welcome');
 });
 
-app.get('/cool', function(request, response) {
+app.get('/profile', function(request, response) {
   response.render('templates/Profile');
 });
 
-app.get('/cool', function(request, response) {
+app.get('/Congrats', function(request, response) {
   response.render('templates/Congrats');
 });
 
 
-app.get('/cool', function(request, response) {
+app.get('/TryAgain', function(request, response) {
   response.render('templates/TryAgain');
 });
 
 
-app.get('/cool', function(request, response) {
+app.get('/DRules', function(request, response) {
   response.render('templates/DRules');
 });
 
-app.get('/cool', function(request, response) {
+app.get('/Teacher', function(request, response) {
   response.render('templates/TeacherPage');
 });
 
