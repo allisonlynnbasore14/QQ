@@ -18,6 +18,25 @@ app.get('/cool', function(request, response) {
   response.render('templates/Profile');
 });
 
+app.get('/cool', function(request, response) {
+  response.render('templates/Congrats');
+});
+
+
+app.get('/cool', function(request, response) {
+  response.render('templates/TryAgain');
+});
+
+
+app.get('/cool', function(request, response) {
+  response.render('templates/DRules');
+});
+
+app.get('/cool', function(request, response) {
+  response.render('templates/TeacherPage');
+});
+
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
