@@ -36,8 +36,6 @@ app.get('/Teacher', function(request, response) {
   response.render('templates/TeacherPage');
 });
 
->>>>>>> 36c3a74697022c56bdebd30da2cd32e5323da86e
-
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
