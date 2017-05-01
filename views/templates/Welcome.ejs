@@ -65,7 +65,7 @@
 
 
 </head>
-<body>
+<body onload="pickJoke()">
 <p id="demo"></p>
 
 <p class = "Welcome">
@@ -73,6 +73,8 @@
 </p>
 
 	 <script>
+	 
+	 function pickJoke(){
     alert( 'Hello, world!' );
     var Joke1 = ["Q: How do you make seven an even number?    A: Take the s out!"];
     var Joke2 = ["Q: What is the difference between a Ph.D. in mathematics and a large pizza?    A: A large pizza can feed a family of four "];
@@ -94,9 +96,13 @@
     var Joke18 = ["The problem with math puns is that calculus jokes are all derivative, trigonometry jokes are too graphic, algebra jokes are usually formulaic, and arithmetic jokes are pretty basic. But I guess the occasional statistics joke is an outliers."];
     var Joke19 = ["After a talking sheepdog gets all the sheep in the pen, he reports back to the farmer: 'All 40 accounted for.'  'But I only have 36 sheep,' says the farmer. 'I know,' says the sheepdog.'But I rounded them up.'"];
     var Joke20 = ["Here’s some advice: At a job interview, tell them you’re willing to give 110 percent. Unless the job is a statistician."];
-    
+    var ind = 3
+    //getRandomInt(0,20);
     var Jokes = [Joke1,Joke2,Joke3,Joke4,Joke5,Joke6,Joke7,Joke8,Joke9,Joke10,Joke11,Joke12,Joke13,Joke14,Joke15,Joke16,Joke17,Joke18,Joke19,Joke20];
-    document.getElementById("demo").innerHTML = Jokes[5];
+    document.getElementById("demo").innerHTML = Jokes[ind];
+    }
+    
+    
   	</script>
 
 
