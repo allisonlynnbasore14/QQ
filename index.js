@@ -11,11 +11,6 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('templates/Welcome');
-});
-
-
-app.get('/profile', function(request, response) {
   response.render('templates/Profile');
 });
 
