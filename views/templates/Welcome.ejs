@@ -38,9 +38,10 @@
 
 	}
 
-	#Joke{
+	#demo{
 		background: lightblue;
 		font-size: 30px;
+		width:400px;
 		position: absolute;
 		left: 700px;
 		top: 200px;
@@ -62,21 +63,20 @@
 
 	</style>
 
+
 </head>
-<body>
+<body onload="pickJoke()">
 
 
 <p class = "Welcome">
 	Welcome to the Quarter Quiz Portal!
 </p>
 
-<p id="Joke">
-	Daily Math Joke:
-	<br><br>
-	Q:How do you make seven an even number?
-	<br><br>
-	A:Take the s out!
-</p>
+<p id ="demo"></p>
+
+
+<script type="text/javascript" src="jokes.js"></script>
+
 
 <p id="Login"> Login:</p>
 <div class = "form">
