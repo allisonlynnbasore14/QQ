@@ -65,19 +65,20 @@
 
 
 </head>
-<body onload="pickJoke()">
+<body>
 
 
 <p class = "Welcome">
 	Welcome to the Quarter Quiz Portal!
 </p>
 
-<p id ="demo"></p>
 
+<% include jokes.js %>
 
-<script>
-	
-	</script>
+<p id = "demo">
+<%= pickJoke()%>
+</p>
+
 
 
 <p id="Login"> Login:</p>
