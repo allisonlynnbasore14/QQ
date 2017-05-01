@@ -14,10 +14,31 @@ app.get('/', function(request, response) {
   response.render('templates/Welcome');
 });
 
-app.get('/cool', function(request, response) {
+app.get('/profile', function(request, response) {
   response.render('templates/Profile');
 });
 
+<<<<<<< HEAD
+=======
+app.get('/Congrats', function(request, response) {
+  response.render('templates/Congrats');
+});
+
+
+app.get('/TryAgain', function(request, response) {
+  response.render('templates/TryAgain');
+});
+
+
+app.get('/DRules', function(request, response) {
+  response.render('templates/DRules');
+});
+
+app.get('/Teacher', function(request, response) {
+  response.render('templates/TeacherPage');
+});
+
+>>>>>>> 36c3a74697022c56bdebd30da2cd32e5323da86e
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
