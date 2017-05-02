@@ -17,7 +17,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/profile', function(request, response) {
-  response.render('templates/Profile',{ firstname:"Allison" });
+  res.render('templates/Profile',{ firstname:"Allison" });
 });
 
 app.get('/Congrats', function(request, response) {
