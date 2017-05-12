@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>
+		AngelaMathClass_QuarterQuizes
+	</title>
+
+	<style>
+
+	</style>
+
+
+</head>
+<body>
+
+
+
+	 <script>
+	 function getInfo(){
+	 	var Users = [{UserName= "Allison", password = "Basore"}, {Username = "Sally", password = "Hippo"}]
+	 	var UserName = document.getElementById("UserName").value
+	 	var password = document.getElementById("password").value
+	 	document.write("Your username is"+ UserName + "and your password is" + password)
+	 }
+    
+    
+  	</script>
+
+
+
+
+<p id="Login"> Login:</p>
+<div class = "form">
+<form>
+  		User Name:<br>
+  		<input type="text" id = "UserName" fname="UserName">
+  		<br>
+  		Password:<br>
+  		<input type= "text" fname="password" id= "password">
+ 	<br><br>
+ 	<button type="button" onCLick = getInfo() value="Login">Click Here</button>
+</form>
+</div>
+
+</body>
+</html>
