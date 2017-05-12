@@ -11,7 +11,7 @@ var express = require('express');
 var index = require('./routes/index');
 var app = express();
 
-// app.set('port', (process.env.PORT || 5000));
+ app.set('port', (process.env.PORT || 5000));
 
 // app.use(express.satic(__dirname + '/public'));
 
@@ -58,7 +58,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', index.home);
 console.log("Yes, I am here here!")
-//app.listen(2000);
+//app.listen(3000);
 
 
 app.listen(app.get('port'), function() {
