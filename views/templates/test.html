@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>
+		AngelaMathClass_QuarterQuizes
+		</title>
+	</head>
+	<body>
+		<form>
+			<input type="text" id="username" placeholder="Choose Username">
+			<input type="password" id="password" placeholer="Choose Password">
+			<button type="button" onclick="getInfo()">Click Me</button>
+		</form>
+
+	<p id="Answerto1"></p>
+
+<script>
+var Users = [
+	{ // Object @ 0 index
+		username: "Allison",
+		password: "Basore"
+	},
+]
+
+function getInfo() {
+	var username = document.getElementById('username').value
+	var password = document.getElementById('password').value
+
+	for(var i = 0; i < Users.length; i++) {
+		// check is user input matches username and password of a current index of the objPeople array
+		if(username == Users[i].username && password == Users[i].password) {
+ 		document.getElementById("Answerto1").innerHTML = "Your username is  "+ username + "  and your password is  " + password;
+			return
+		}
+	}
+}
+
+</script>
+
+
+
+	</body>
+</html>
