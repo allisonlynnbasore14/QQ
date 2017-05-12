@@ -5,9 +5,9 @@
   "engines": {
     "node": "4v.2.6"
   },
-  "main": "index.js",
+  "main": "index2.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index2.js"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
