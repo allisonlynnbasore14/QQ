@@ -1,6 +1,5 @@
-
 {
-  "name": "QQ",
+  "name": "qq",
   "version": "0.1.1",
   "description": "Online Quarter Quizzes",
   "engines": {
@@ -11,17 +10,27 @@
     "start": "node index.js"
   },
   "dependencies": {
-   "ejs": "2.5.6",
-   "express": "4.15.2"
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "2.5.6",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "morgan": "^1.8.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/allisonlynnbasore14/QQ"
+    "url": "git+https://github.com/allisonlynnbasore14/QQ.git"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
-   "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allisonlynnbasore14/QQ/issues"
+  },
+  "homepage": "https://github.com/allisonlynnbasore14/QQ#readme",
+  "devDependencies": {},
+  "author": "Allison Basore"
 }
