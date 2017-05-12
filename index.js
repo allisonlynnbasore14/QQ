@@ -1,5 +1,14 @@
+var fs = require('fs')
+var mymodule = require('./mymodule.js')
+var http = require('http')
+var path = require('path');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var exphbs = require('express-handlebars');
 
 var express = require('express');
+var index = require('./routes/index');
 var app = express();
 
 // app.set('port', (process.env.PORT || 5000));
