@@ -26,11 +26,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', index.home);
 console.log("Yes, I am here!")
-//app.listen(3000);
+app.listen(3000);
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+//app.listen(app.get('port'), function() {
+  //console.log('Node app is running on port', app.get('port'));
+//});
 
 
 
