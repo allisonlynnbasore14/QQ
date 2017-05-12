@@ -8,4 +8,5 @@ To run:
  
  heroku start
  
- 
+ ### NOtICE TO MYSELF:
+ The current program is not updated the Heroku website. Instead it is an old version. I am still debugging.
