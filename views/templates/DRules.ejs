@@ -7,20 +7,60 @@
 	<title>
 		AngelaMathClass_QuarterQuizes
 	</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 	<style>
 	body{
-		background-image:url(https://img.clipartfox.com/53f526e6a490d723769bd6d3ce46e09d_notebook-paper-template-cute-notebook-page-clipart_900-1200.png);
 	}
 
 	form{
-		color: darkblue;
+		color: #800000;
+		line-height: 200%;
 		font-size: 20px;
-		position: fixed;
-		left:30%;
-		top:30%;
-		width:900px;
+		position: absolute;
+		font-weight: bold;
+		left:5%;
+		top:5%;
+		width:800px;
 		word-spacing: 5px;
-		line-height: 10px;
+		line-height: 20px;
+		z-index: 2;
+		height: 900px;
+
+	}
+
+	.WhiteBox{
+	position: absolute;
+	left:30%;
+	top:30%;
+	height: 600px;
+	background-color: white;
+    width: 900px;
+    padding: 10px;
+    border: 5px solid #00008B;
+    margin: 0;
+    z-index: 1;
+
+	}
+
+	.backimg{
+		z-index: -1;
+		width: 1200px;
+		opacity: 0.5;
+		display: block;
+		margin: 0 auto;
+
+	}
+
+	.Heading{
+		font-family: "Tangerine", serif;
+		font-size: 130px;
+		position: absolute;
+		top:0%;
+		left:42%;
+		color: black;
+		z-index: 3;
+
 	}
 
 	.btn{
@@ -29,13 +69,15 @@
 		cursor: crosshair;
 		font-family: times;
 		font-size: 30px;
-		position: fixed;
-		left:700px;
-		top:700px;
+		position: absolute;
+		left:30%;
+		top:50%;
 	}
 
 	#Answerto1{
-		font-size: 60px
+		font-size: 60px;
+		word-spacing: 50px;
+
 	}
 	#Answerto2{
 		font-size: 30px;
@@ -50,7 +92,11 @@
 
 <body>
 
+	<p class = "Heading">
+		Division Rules
+	</p>
 
+<div class = "WhiteBox">
 	 <form name = "Div_Rules">
   		A number is divisible by two if it ends in an
   		<input type="text" name="Answer1">
@@ -85,6 +131,8 @@
  	<br><br>
  	<input class= "btn" type="button" value="Submit" onClick="processAnswers()">
 	</form>
+</div>
+	<img class = "backimg" src="https://img.clipartfox.com/53f526e6a490d723769bd6d3ce46e09d_notebook-paper-template-cute-notebook-page-clipart_900-1200.png">
  
 <p id ="Answerto1" ></p>
 
