@@ -20,6 +20,13 @@ app.use(stormpath.init(app, {
   }
 }));
  
+ app.use(express.static(__dirname + '/public'));
+
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+
 // Generate a simple home page.
 app.get('/home', function(req, res) {
   res.send("Hey there! Thanks for visting the site! Be sure to <a href='/login'>login</a>!");
@@ -34,11 +41,7 @@ app.get('/profile', stormpath.loginRequired, function(req, res) {
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static(__dirname + '/public'));
 
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
   response.render('templates/Welcome');
