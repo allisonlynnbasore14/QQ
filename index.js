@@ -1,38 +1,12 @@
 
 var express = require('express');
-//var stormpath = require('express-stormpath');
-
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
-// Configure Stormpath.
-// app.use(stormpath.init(app, {
-//   application: {
-//     href: process.env.STORMPATH_APPLICATION_HREF
-//   },
-//   website: true,
-//   web: {
-//     login: {
-//       nextUri: '/dashboard'
-//     }
-//   }
-// }));
-
-// // Generate a simple home page.
-// app.get('/', function(req, res) {
-//   res.send("Hey there! Thanks for visting the site! Be sure to <a href='/login'>login</a>!");
-// });
- 
-// // Generate a simple dashboard page.
-// app.get('/dashboard', stormpath.loginRequired, function(req, res) {
-//   res.send('Hi: ' + req.user.email + '. Logout <form action="/logout" method="POST"><button type="submit">Logout</button></form>');
-// });
-
-
-views is directory for all template files
+// views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
