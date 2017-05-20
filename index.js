@@ -26,7 +26,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 // Generate a simple home page.
-app.get('/', function(req, res) {
+app.get('/home', function(req, res) {
   res.send("Hey there! Thanks for visting the site! Be sure to <a href='/login'>login</a>!");
 });
  
