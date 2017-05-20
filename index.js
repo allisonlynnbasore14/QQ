@@ -15,7 +15,7 @@ app.use(stormpath.init(app, {
   website: true,
   web: {
     login: {
-      nextUri: '/dashboard'
+      nextUri: '/profile'
     }
   }
 }));
@@ -26,7 +26,7 @@ app.get('/home', function(req, res) {
 });
  
 // Generate a simple dashboard page.
-app.get('/dashboard', stormpath.loginRequired, function(req, res) {
+app.get('/profile', stormpath.loginRequired, function(req, res) {
   res.send('Hi: ' + req.user.email + '. Logout <form action="/logout" method="POST"><button type="submit">Logout</button></form>');
 });
  
@@ -46,9 +46,9 @@ app.get('/', function(request, response) {
     res.render('templates/Profile',{ firstname:firstname })
 });
 
-app.get('/profile', function(request, response) {
-  res.render('templates/Profile',{ firstname:"Allison" })
-});
+// app.get('/profile', function(request, response) {
+//   //res.render('templates/Profile',{ firstname:"Allison" })
+// });
 
 app.get('/Congrats', function(request, response) {
   response.render('templates/Congrats');
