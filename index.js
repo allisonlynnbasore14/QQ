@@ -15,7 +15,7 @@ app.use(stormpath.init(app, {
   website: true,
   web: {
     login: {
-      nextUri: '/dashboard'
+      nextUri: '/profile'
     }
   }
 }));
