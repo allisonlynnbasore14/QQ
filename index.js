@@ -28,12 +28,12 @@ app.set('view engine', 'ejs');
 
 
 // Generate a simple home page.
-app.get('/home', function(req, res) {
-  res.send("Hey there! Thanks for visting the site! Be sure to <a href='/login'>login</a>!");
+app.get('/home', function(request, response) {
+  response.send("Hey there! Thanks for visting the site! Be sure to <a href='/login'>login</a>!");
 });
  
 // Generate a simple dashboard page.
-app.get('/profile', stormpath.loginRequired, function(req, res) {
+app.get('/profile', stormpath.loginRequired, function(request, response) {
   response.render('templates/Congrats');
   //res.send('Hi: ' + req.user.email + '. Logout <form action="/logout" method="POST"><button type="submit">Logout</button></form>');
 });
