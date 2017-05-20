@@ -6,6 +6,7 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
+//app.use(express.static(__dirname + '/public'));
 
 // Configure Stormpath.
 app.use(stormpath.init(app, {
@@ -19,14 +20,9 @@ app.use(stormpath.init(app, {
     }
   }
 }));
-app.use(express.static(__dirname + '/public'));
-
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
 
 // Generate a simple home page.
-app.get('/home', function(req, res) {
+app.get('/', function(req, res) {
   res.send("Hey there! Thanks for visting the site! Be sure to <a href='/login'>login</a>!");
 });
  
@@ -36,42 +32,46 @@ app.get('/dashboard', stormpath.loginRequired, function(req, res) {
 });
  
 
-app.get('/', function(request, response) {
-  response.render('templates/Welcome');
-    var user = req.param('firstname');
-    res.render('templates/Profile',{ firstname:firstname })
-});
+// views is directory for all template files
+// app.set('views', __dirname + '/views');
+// app.set('view engine', 'ejs');
 
-app.get('/profile', function(request, response) {
-  res.render('templates/Profile',{ firstname:"Allison" })
-});
+// app.get('/', function(request, response) {
+//   response.render('templates/Welcome');
+//     var user = req.param('firstname');
+//     res.render('templates/Profile',{ firstname:firstname })
+// });
 
-app.get('/Congrats', function(request, response) {
-  response.render('templates/Congrats');
-});
+// app.get('/profile', function(request, response) {
+//   res.render('templates/Profile',{ firstname:"Allison" })
+// });
 
-
-app.get('/TryAgain', function(request, response) {
-  response.render('templates/TryAgain');
-});
-
-
-app.get('/DRules', function(request, response) {
-  response.render('templates/DRules');
-});
-
-app.get('/PrimeNumbers', function(request, response) {
-  response.render('templates/DRules');
-});
-
-app.get('/Teacher', function(request, response) {
-  response.render('templates/TeacherPage');
-});
+// app.get('/Congrats', function(request, response) {
+//   response.render('templates/Congrats');
+// });
 
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+// app.get('/TryAgain', function(request, response) {
+//   response.render('templates/TryAgain');
+// });
+
+
+// app.get('/DRules', function(request, response) {
+//   response.render('templates/DRules');
+// });
+
+// app.get('/PrimeNumbers', function(request, response) {
+//   response.render('templates/DRules');
+// });
+
+// app.get('/Teacher', function(request, response) {
+//   response.render('templates/TeacherPage');
+// });
+
+
+// app.listen(app.get('port'), function() {
+//   console.log('Node app is running on port', app.get('port'));
+// });
 
 
 
