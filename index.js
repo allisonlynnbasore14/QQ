@@ -34,7 +34,8 @@ app.get('/home', function(req, res) {
  
 // Generate a simple dashboard page.
 app.get('/profile', stormpath.loginRequired, function(req, res) {
-  res.send('Hi: ' + req.user.email + '. Logout <form action="/logout" method="POST"><button type="submit">Logout</button></form>');
+  response.render('templates/Congrats');
+  //res.send('Hi: ' + req.user.email + '. Logout <form action="/logout" method="POST"><button type="submit">Logout</button></form>');
 });
  
 
