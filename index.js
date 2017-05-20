@@ -54,9 +54,9 @@ app.get('/', function(request, response) {
 //   //res.render('templates/Profile',{ firstname:"Allison" })
 // });
 
-app.get('/Congrats', function(request, response) {
-  response.render('templates/Congrats');
-});
+// app.get('/Congrats', function(request, response) {
+//   response.render('templates/Congrats');
+// });
 
 
 app.get('/TryAgain', function(request, response) {
