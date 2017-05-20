@@ -1,10 +1,24 @@
 
 var express = require('express');
+var stormpath = require('express-stormpath');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
+
+// Configure Stormpath.
+app.use(stormpath.init(app, {
+  application: {
+    href: process.env.STORMPATH_APPLICATION_HREF
+  },
+  website: true,
+  web: {
+    login: {
+      nextUri: '/dashboard'
+    }
+  }
+}));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
