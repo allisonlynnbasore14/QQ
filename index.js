@@ -68,6 +68,10 @@ app.get('/DRules', function(request, response) {
   response.render('templates/DRules');
 });
 
+app.get('/DRulesPoem', function(request, response) {
+  response.render('pages/DRules');
+});
+
 app.get('/PrimeNumbers', function(request, response) {
   response.render('templates/DRules');
 });
