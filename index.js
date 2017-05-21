@@ -63,7 +63,6 @@ app.get('/TryAgain', function(request, response) {
   response.render('templates/TryAgain');
 });
 
-
 app.get('/DRules', function(request, response) {
   response.render('templates/DRules');
 });
