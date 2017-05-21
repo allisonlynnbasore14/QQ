@@ -67,8 +67,8 @@ app.get('/DRules', function(request, response) {
   response.render('templates/DRules');
 });
 
-app.get('/DRulesPoem', function(request, response) {
-  response.render('templates/DRulesPoem');
+app.get('/DPoem', function(request, response) {
+  response.render('templates/DPoem');
 });
 
 app.get('/PrimeNumbers', function(request, response) {
