@@ -177,9 +177,21 @@
 	var correct = 0;
 	var total = 1;
 	var Guesses = [document.getElementById("Poem").value];
-	if (Guesses[0].includes("#2")&&Guesses[0].includes("#3")&&Guesses[0].includes("#4")&&Guesses[0].includes("#5")&&Guesses[0].includes("#6")&&Guesses[0].includes("#7")&&
-		Guesses[0].includes("#7")&&
-		Guesses[0].includes("#8")){
+	if (Guesses[0].includes("#2")
+		&&Guesses[0].includes("#3")
+		&&Guesses[0].includes("#4")
+		&&Guesses[0].includes("#5")
+		&&Guesses[0].includes("#6")
+		&&Guesses[0].includes("#7")
+		&&Guesses[0].includes("#10")
+		&&Guesses[0].includes('even')
+		&&Guesses[0].includes('hero')
+		&&Guesses[0].includes('even')
+		&&Guesses[0].includes('end')
+		&&Guesses[0].includes('biggest')
+		&&Guesses[0].includes('fine')
+		&&Guesses[0].includes('know')
+		){
 		correct = correct + 1
 		};
 	console.log(correct);
