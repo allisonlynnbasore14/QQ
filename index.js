@@ -69,7 +69,7 @@ app.get('/DRules', function(request, response) {
 });
 
 app.get('/DRulesPoem', function(request, response) {
-  response.render('templates/DRulesPoem');
+  response.render('templates/DRules');
 });
 
 app.get('/PrimeNumbers', function(request, response) {
