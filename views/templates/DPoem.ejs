@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>
+		QuarterQuizes
+	</title>
+	
+
+</head>
+
+
+<body>
+	<p id='AnswerDisplay'>
+	</p>
+	<div class = "WhiteBox">
+		<p class = "Directions">
+		Type the poem into the text field. Do not worry about making it perfect.
+		</p>
+		<p class = "Heading">
+			Division Rules Poem
+		</p>
+		<p class = "Tocopy">
+			I'm #2 and I'll be your friend,
+			<br>
+			as long as an even #'s on the 	end.
+			<br><br>
+			#3 will work for me, you see,
+			<br>
+			if the sum is divisible by 3.
+			<br><br>
+			The #4 won't be such a chore.
+			<br>
+			if the last 2 are divisible by 4.
+			<br><br>
+			The #5 is my biggest hero,
+			<br>
+			he has to end in 5 or 0
+			<br><br>
+			The #6 will always go into me,
+			<br>
+			as long as so does 2 and 3.
+			<br><br>
+			#9 will go into me just fine,
+			<br>
+			if the sume is divisible by 9.
+			<br><br>
+			I'm #10 and this you should know,
+			<br>
+			I always end in a big fat 0!
+		</p>
+		 <form name = "Div_Rules">
+		 <textarea name = "Poem" id = "Poem" >
+		 </textarea>
+	 		<input class= "btn" type="button" value="Submit" onClick="processAnswers()">
+		</form>
+	</div>
+	<img class = "backimg" src="https://img.clipartfox.com/53f526e6a490d723769bd6d3ce46e09d_notebook-paper-template-cute-notebook-page-clipart_900-1200.png">
+
+<script type="text/javascript">
+
+    function processAnswers() {
+	var correct = 0;
+	var total = 1;
+	var Guesses = [document.getElementById("Poem").value];
+	if (Guesses[0].includes("#2")&&Guesses[0].includes("#3")&&Guesses[0].includes("#4")&&Guesses[0].includes("#5")&&Guesses[0].includes("#6")&&Guesses[0].includes("#7")&&
+		Guesses[0].includes("#7")&&
+		Guesses[0].includes("#8")){
+		correct = correct + 1
+		};
+	console.log(correct);
+	}
+
+
+
+</script>
+
+</body>
+
+</html>
