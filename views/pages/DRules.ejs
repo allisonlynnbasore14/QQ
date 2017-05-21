@@ -98,6 +98,13 @@
 		top:50%;
 	}
 
+	.logo{
+		position: absolute;
+		left:105%;
+		top:25%;
+		z-index: 4;
+	}
+
 
 	</style>
 
@@ -108,8 +115,11 @@
 	<p id='AnswerDisplay'>
 	</p>
 
+	
+
 
 <div class = "WhiteBox">
+	<img class = "logo" src="logo_2.png">
 	<p class = "Directions">
 	Type or Select the correct answers to finish the statements about divisibility rules.
 	</p>
@@ -246,7 +256,7 @@
 	var total = 13;
 	var Guesses = [document.Div_Rules.Answer1.value,document.Div_Rules.Answer2.value,document.Div_Rules.Answer3.value,document.Div_Rules.Answer4.value,document.Div_Rules.Answer5.value,document.Div_Rules.Answer6.value,document.Div_Rules.Answer7.value,document.Div_Rules.Answer8.value,document.Div_Rules.Answer9.value,document.Div_Rules.Answer10.value,document.Div_Rules.Answer11.value,document.Div_Rules.Answer12.value,document.Div_Rules.Answer13.value,document.Div_Rules.Answer14.value];
 
-	var answers = ['even',0,2,4,6,8,'sum',3,15,'is','is',"isn't",'none',5];
+	var answers = ['even',0,2,4,6,8,'sum',3,15,'is','is',"not",'none',5];
 		if (checker(Guesses[0],answers[0])){
 			correct = correct + 1
 		}
@@ -272,6 +282,7 @@
 			correct = correct + 1
 		}
 		if (checker(Guesses[8],answers[8])){
+			console.log(Guesses[8],answers[8])
 			correct = correct + 1
 		}
 		if (checker(Guesses[9],answers[9])){
