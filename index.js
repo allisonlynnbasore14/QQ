@@ -46,8 +46,8 @@ app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
   response.render('templates/Welcome');
-    var user = req.param('firstname');
-    res.render('templates/Profile',{ firstname:firstname })
+    var user = request.param('firstname');
+    response.render('templates/Profile',{ firstname:firstname })
 });
 
 // app.get('/profile', function(request, response) {
