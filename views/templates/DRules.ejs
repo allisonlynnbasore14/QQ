@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>
+		QuarterQuizes
+	</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<style>
+	body{
+	}
+
+	form{
+		color: #004d99;
+		line-height: 200%;
+		font-size: 20px;
+		position: absolute;
+		font-weight: bold;
+		left:5%;
+		top:5%;
+		width:800px;
+		word-spacing: 5px;
+		line-height: 40px;
+		z-index: 2;
+		height: 900px;
+		font-family: monaco,Consolas,Lucida Console,monospace;
+	}
+
+	.WhiteBox{
+		color: #004d99;
+		position: absolute;
+		left:22%;
+		top:30%;
+		height: 600px;
+		background-color: white;
+		width: 900px;
+		padding: 10px;
+		border: 5px solid  #ff8080;
+		margin: 0;
+		z-index: 1;
+	}
+
+	.Directions{
+		position: absolute;
+		padding: 10px;
+		left: 105%;
+		top: -35%;
+		border: 7px solid #004d99;
+		font-size: 18px;
+		font-weight: bold;
+		color: #b30000;
+		width: 300px;
+		height: 170px;
+		text-align: center;
+		font-family: monaco,Consolas,Lucida Console,monospace;
+	}
+
+	.backimg{
+		z-index: -1;
+		width: 1500px;
+		opacity: 0.5;
+		display: block;
+		margin: 0 auto;
+		height: 1500px;
+	}
+
+	.Heading{
+		font-family: monaco,Consolas,Lucida Console,monospace; 
+		font-size: 80px;
+		position: absolute;
+		top:-200px;
+		left:13%;
+		color: black;
+		z-index: 3;
+
+	}
+	
+	#AnswerDisplay{
+		font-size: 500%;
+		z-index: 5;
+		position: absolute;
+		left:10%;
+		top: 30%;
+		color: red;
+	}
+
+	.btn{
+		width:200px;
+		height:50px;
+		font-family: monaco,Consolas,Lucida Console,monospace;
+		cursor: crosshair;
+		font-size: 30px;
+		position: absolute;
+		left:38%;
+		top:50%;
+	}
+
+	.logo{
+		position: absolute;
+		left:105%;
+		top:25%;
+		z-index: 4;
+	}
+
+
+	</style>
+
+</head>
+
+
+<body>
+	<p id='AnswerDisplay'>
+	</p>
+
+	
+
+
+<div class = "WhiteBox">
+	<img class = "logo" src="logo_2.png">
+	<p class = "Directions">
+	Type or Select the correct answers to finish the statements about divisibility rules.
+	</p>
+	<p class = "Heading">
+		Division Rules
+	</p>
+	 <form name = "Div_Rules">
+  		A number is divisible by two if it ends in an
+  		<input type="text" size="10" name="Answer1">
+  		number which are (in order)
+  		  <select name="Answer2">
+    		<option value="0">0</option>
+    		<option value="1">1</option>
+    		<option value="2">2</option>
+    		<option value="3">3</option>
+    		<option value="4">4</option>
+    		<option value="5">5</option>
+    		<option value="6">6</option>
+    		<option value="7">7</option>
+    		<option value="8">8</option>
+    		<option value="9">9</option>
+  		</select>
+  		,
+  	  	<select name="Answer3">
+    		<option value="0">0</option>
+    		<option value="1">1</option>
+    		<option value="2">2</option>
+    		<option value="3">3</option>
+    		<option value="4">4</option>
+    		<option value="5">5</option>
+    		<option value="6">6</option>
+    		<option value="7">7</option>
+    		<option value="8">8</option>
+    		<option value="9">9</option>
+  		</select>
+  		,
+  	  	<select name="Answer4">
+    		<option value="0">0</option>
+    		<option value="1">1</option>
+    		<option value="2">2</option>
+    		<option value="3">3</option>
+    		<option value="4">4</option>
+    		<option value="5">5</option>
+    		<option value="6">6</option>
+    		<option value="7">7</option>
+    		<option value="8">8</option>
+    		<option value="9">9</option>
+  		</select>
+  		,
+  		<select name="Answer5">
+    		<option value="0">0</option>
+    		<option value="1">1</option>
+    		<option value="2">2</option>
+    		<option value="3">3</option>
+    		<option value="4">4</option>
+    		<option value="5">5</option>
+    		<option value="6">6</option>
+    		<option value="7">7</option>
+    		<option value="8">8</option>
+    		<option value="9">9</option>
+  		</select>
+  		and
+  		<select name="Answer6">
+    		<option value="0">0</option>
+    		<option value="1">1</option>
+    		<option value="2">2</option>
+    		<option value="3">3</option>
+    		<option value="4">4</option>
+    		<option value="5">5</option>
+    		<option value="6">6</option>
+    		<option value="7">7</option>
+    		<option value="8">8</option>
+    		<option value="9">9</option>
+  		</select>
+  		. A number is divisible by three if the
+  		<input type="text" name="Answer7" size="10">
+  		of its digits are divisible by
+  		<select name="Answer8">
+    		<option value="0">0</option>
+    		<option value="1">1</option>
+    		<option value="2">2</option>
+    		<option value="3">3</option>
+    		<option value="4">4</option>
+    		<option value="5">5</option>
+    		<option value="6">6</option>
+    		<option value="7">7</option>
+    		<option value="8">8</option>
+    		<option value="9">9</option>
+  		</select>
+  		. The sum of the digits of number 34,017 is
+  		<input type="text" size="10" name="Answer9">
+  		which
+  		<select name="Answer10">
+    		<option value="is">is</option>
+    		<option value="not">isn't</option>
+  		</select>
+  		divisible by three, so 34,017
+    	<select name="Answer11">
+    		<option value="is">is</option>
+    		<option value="not">isn't</option>
+  		</select>
+  		divisible by three. The number 2,333
+  		<select name="Answer12">
+    		<option value="is">is</option>
+    		<option value="not">isn't</option>
+  		</select>
+  		divisible by three. An example of a four digit number that is divisible by 5 would be
+		<input type="text" size="10" name="Answer13">
+		because it ends in a
+		<input type="text" size="10" name="Answer14">
+		.
+
+ 	<br><br>
+ 	<input class= "btn" type="button" value="Submit" onClick="processAnswers()">
+	</form>
+</div>
+	<img class = "backimg" src="https://img.clipartfox.com/53f526e6a490d723769bd6d3ce46e09d_notebook-paper-template-cute-notebook-page-clipart_900-1200.png">
+
+<script type="text/javascript">
+    //document.write("This is printed via javascript!");
+    //document.getElementById("Answerto1").innerHTML = "Hello JavaScript!";
+    	//function create(){
+	//	var para = document.createElement('p');
+	//	para.textContent = 'You click it!';
+	//	document.body.appendChild(para)
+	//}
+	//var but = document.querySelectorAll('button');
+
+	//for (var i = 0; i<but.length;i++){
+	//	but[i].addEventListener('click',create)
+	//}
+    function processAnswers() {
+	var correct = 0;
+	var total = 13;
+	var Guesses = [document.Div_Rules.Answer1.value,document.Div_Rules.Answer2.value,document.Div_Rules.Answer3.value,document.Div_Rules.Answer4.value,document.Div_Rules.Answer5.value,document.Div_Rules.Answer6.value,document.Div_Rules.Answer7.value,document.Div_Rules.Answer8.value,document.Div_Rules.Answer9.value,document.Div_Rules.Answer10.value,document.Div_Rules.Answer11.value,document.Div_Rules.Answer12.value,document.Div_Rules.Answer13.value,document.Div_Rules.Answer14.value];
+
+	var answers = ['even',0,2,4,6,8,'sum',3,15,'is','is',"not",'none',5];
+		if (checker(Guesses[0],answers[0])){
+			correct = correct + 1
+		}
+		if (checker(Guesses[1],answers[1])){
+			correct = correct + 1
+		}
+		if (checker(Guesses[2],answers[2])){
+			correct = correct + 1
+		}
+		if (checker(Guesses[3],answers[3])){
+			correct = correct + 1
+		}
+		if (checker(Guesses[4],answers[4])){
+			correct = correct + 1
+		}
+		if (checker(Guesses[5],answers[5])){
+			correct = correct + 1	
+		}
+		if (checker(Guesses[6],answers[6])){
+			correct = correct + 1
+		}
+		if (checker(Guesses[7],answers[7])){
+			correct = correct + 1
+		}
+		if (checker(Guesses[8],answers[8])){
+			console.log(Guesses[8],answers[8])
+			correct = correct + 1
+		}
+		if (checker(Guesses[9],answers[9])){
+			correct = correct + 1
+		}
+		if (checker(Guesses[10],answers[10])){
+			correct = correct + 1
+		}
+		if (checker(Guesses[11],answers[11])){
+			correct = correct + 1
+		}
+		if (Guesses[12] % 5 === 0 ){
+			correct = correct + 1
+		}
+		if ( Guesses[13] == 0 || Guesses[13] == 5){
+			correct = correct + 1
+		}
+		console.log(correct)
+		document.getElementById("AnswerDisplay").innerHTML = correct;
+	}
+
+	function checker(answer,correct){
+		if (answer == correct){
+			return Boolean(3>2);
+		}else{
+			return Boolean(2>3);
+		}
+	}
+
+
+</script>
+
+</body>
+
+</html>
