@@ -65,7 +65,7 @@ app.get('/TryAgain', function(request, response) {
 
 
 app.get('/DRules', function(request, response) {
-  response.render('templates/DRules');
+  response.render('pages/DRules');
 });
 
 app.get('/PrimeNumbers', function(request, response) {
