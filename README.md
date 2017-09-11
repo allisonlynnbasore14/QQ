@@ -8,5 +8,6 @@ To run:
  
  heroku start
  
- ### NOtICE TO MYSELF:
- The current program is not updated the Heroku website. Instead it is an old version. I am still debugging.
+ ### NOTICE
+ The program is not updated the Heroku website. Instead it is just a draft. The real version can be found at https://scenic-crater-lake-37652.herokuapp.com/Login
+ 
